@@ -152,7 +152,7 @@ const ViewBookDetails = () => {
               <>
                 <h1 className='text-4xl text-zinc-300 font-semibold'>{data.title}</h1>
                 <p className='text-md text-zinc-400 mt-1'>by {data.author}</p>
-                <p className='text-lg text-red-300 mt-1'>Price: ${data.price}</p>
+                <p className='text-lg text-red-300 mt-1'>Price: ₹{data.price}</p>
                 <p className='text-xl text-zinc-500 mt-4'>{data.desc}</p>
                 <p className='flex mt-4 justify-start items-center text-zinc-400'>
                   <MdLanguage className='me-3 mr-1' />

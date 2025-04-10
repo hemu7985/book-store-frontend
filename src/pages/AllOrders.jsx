@@ -74,7 +74,7 @@ const AllOrders = () => {
             <div className="w-[40%] md:w-[22%] text-center">Books</div>
             <div className="w-0 md:w-[45%] hidden md:block text-center">Description</div>
             <div className="w-[17%] md:w-[9%] text-center">Price</div>
-            <div className="w-[30%] md:w-[16%] text-center">Status</div>
+            <div className="w-[30%] md:w-[16%] text-center">status</div>
             <div className="w-[10%] md:w-[5%] text-center">
               <FaUserLarge />
             </div>
@@ -106,11 +106,11 @@ const AllOrders = () => {
                   onClick={() => setOptions(i)}
                 >
                   {items.status === "Order placed" ? (
-                    <div className="text-yellow-500">{items.status}</div>
+                    <div className="text-yellow-500">{items?.status}</div>
                   ) : items.status === "Canceled" ? (
-                    <div className="text-red-500">{items.status}</div>
+                    <div className="text-red-500">{items?.status}</div>
                   ) : (
-                    <div className="text-green-500">{items.status}</div>
+                    <div className="text-green-500">{items?.status}</div>
                   )}
                 </button>
 
